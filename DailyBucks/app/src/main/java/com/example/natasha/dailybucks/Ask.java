@@ -38,7 +38,7 @@ public class Ask extends AppCompatActivity {
         texty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getBaseContext(), Splash.class);
+                Intent intent = new Intent(getBaseContext(), Login.class);
                 startActivity(intent);
             }
         });
