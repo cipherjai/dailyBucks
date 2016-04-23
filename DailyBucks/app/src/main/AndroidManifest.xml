@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Ask" />
-        <activity android:name=".Login"></activity>
+        <activity android:name=".Login" />
     </application>
 
 </manifest>
