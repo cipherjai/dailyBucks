@@ -24,7 +24,7 @@ public class AddCard extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"Card Successfully Saved",Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(getBaseContext(), SignUp.class);
-                startActivity(intent);
+                startActivity(intent);// Check for the activity if already signed in should move back to home not intent to sign up page
             }
         });
             }
