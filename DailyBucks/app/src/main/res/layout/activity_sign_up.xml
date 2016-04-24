@@ -194,8 +194,9 @@
                 android:src="@drawable/add_card"
                 android:clickable="true"
                 android:paddingRight="70dp"
+                android:layout_alignStart="@+id/textView18"
                 android:layout_below="@+id/textView17"
-                android:layout_toEndOf="@+id/textView11" />
+                android:layout_alignEnd="@+id/textView17" />
 
             <Button
                 android:layout_width="300dp"
