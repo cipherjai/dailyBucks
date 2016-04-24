@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,7 +13,8 @@ public class SignUp extends AppCompatActivity {
 
 
     private static TextView texty;
-    Button btn;
+    private static Button btn;
+    private static ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +22,7 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
         OnClickListener();
 
-        btn = findViewById(R.id.button3);
+        btn = (Button)findViewById(R.id.button3);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +38,15 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(), Login.class);
+                startActivity(intent);
+            }
+        });
+
+        iv = (ImageView) findViewById(R.id.imageView7);
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), AddCard.class);
                 startActivity(intent);
             }
         });

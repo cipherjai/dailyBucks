@@ -32,7 +32,7 @@ public class Splash extends AppCompatActivity {
                 iv.startAnimation(an2);
                 finish();
                 Intent i = new Intent(getBaseContext(),Ask.class);
-
+                startActivity(i);
             }
 
             @Override

@@ -28,7 +28,7 @@ public class Ask extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getBaseContext(), Splash.class);
+                Intent intent = new Intent(getBaseContext(), SignUp.class);
                 startActivity(intent);
             }
         });
